@@ -1,0 +1,88 @@
+Analyzing a cyber attack
+
+		Types of malware
+		
+		 Malware is any code that can be used to steal data, bypass access controls, or cause harm to or compromise a system. Some of the most common malware are:
+		 
+			1>spyware: Designed to spy on you it can monitor every keypress and can access any of your data including sensitive personal inforamtion
+			2>Adware : Installed with some versions of softwares and is designed to deliver advertisements to users
+			3>Backdoor: It is a type of malware designed to gain unauthorized access by bypassing normal authentication
+			4>Ransomware: It is designed to hold a computer system or the data it contains until a payment is made. It generally works by encrypting a data so an user cannot access it.
+			5>Scareware: It tricks you to take an action by scaring you such as desplaying your system is hacked and need to install a specific application and as soon as you do it, your system is compromised.
+			6>Rootkit: It is a malware designed to create a backdoor in a system which attacker can later use to access the system.
+			7>Virus: It is a malware that when executed, replicates and attaches itself to other executable files such as documents by inserting its own code.
+			8>Torjan horse: It carries malicious operations by masking its true intentions. It appears as harmless program but are quite dangerous.
+			9>Worms: It is a type of malicious program that replicates itself to spread from one device to another. At one instance a worm called code red worm infected over 300000 servers in just 19 hours.
+		
+		Symptoms of malware
+		
+			. an increase in central processing unit (CPU) usage, which slows down your device
+			· your computer freezing or crashing often
+			· a decrease in your web browsing speed
+			. unexplainable problems with your network connections
+			. modified or deleted files
+			· the presence of unknown files, programs or desktop icons
+			· unknown processes running
+			. programs turning off or reconfiguring themselves
+			· emails being sent without your knowledge or consent.
+			
+Methods of infiltration:
+	
+	1 Social Engineering
+		It is a technique used by attackers to manipulate users into performing actions or divulging confidential inforamtion.
+		Some of its common types are:
+			i) Pretexting is a techniques where the attacker calls an individual and lies to them in attempt to gain access to previleged data.
+			ii) Tailgating is when an attacker quickly follows ann authorized person into a secure, physical location.
+			iii) Something for something where attacker request personal information in exchange of some gifts
+						
+	2 Denial of service(DoS)
+		It is relatively simple to carry out. It results in some sort of interruption of network service to users, devices or application.
+		Its types are: 
+			1> Overwelming quantity of traffic
+			2> Maliciously formatted packets
+		
+	3 Distribued DoS
+		It is similar to Dos attack but originates form multiple coordinated sources.
+		First, a netwok (botnet) of malicious hosts called zombies controlled by handler system is created than the zombies will muliply itself my inifecting other devices creating more zombies. Finally when ready the handler system instructs the zombies to carry out the DDos attack.
+		
+	4 Botnet
+		It is collection of bot computers connected through internet which is created often by visiting a malicious website or opening an infected email. The network is generally controlled by hackers and can be activated to transmit emails or carry out DDoS attacks.
+		
+	5 On-path attacks
+		It is a type of attack that intercepts or modify commutication between two devices such as web server and web browser with an intention of collecting information.
+		It is also known as man in the middle or man in the mobile attack.
+			1> Man in the Middle(MITm) attack is a type of attack where the attacker takes control of the device without users knowledge and can capure any of the information before being sent to the actual receiver.
+			2> Man in the MObile(MITMO) which is used to take control over users mobile device. Zeus is an application with such capability which can capture two factor verification messages quietly.
+			
+	6 SEO poisonig
+		It is a scenario where attackers use SEO techniques to push malicious sites in the higher order in the web page with intent increasing traffic in malicious sites.
+		
+	7 Password attacks
+		Types:
+			1>Password spraying is a technique where common password is entered to multiple username before using the other password. Since two passwords are enterd after a certain time internval, it keeps the attacker unsdetected.
+			2> Dictionary attacks is where hacker uses every password in the dictionary of commonly used password.
+			3> Brute-force attacks using all combinatios of numbers letters and symbols until the hacker gets it right.
+			4> Rainbow attacks is a attack that is done using a rainbow table that contains all many hash values with the actual password. The attackers compares the hash value of the password to the already existing hash in the rianbow table and when finds the match, they identify the password used to create the hash.
+			5> Traffic interception is described as a scenario where you store password in unencrypted form and any authorized or unauthorized user can see the password.
+			
+	8 Advanced persistence threat
+		Usually a high scale and well funded attack to infiltrate a custom malware and remain there undetected with various purposes. 
+			
+Security Vulnerabilities and exploits
+				Vulnaribilities is any defect in a software or a hardware.
+				Exploit is a program written to take advantages of vulnaribilities with an motive to gain access to the system.
+				
+	Hardware vulnaribilities:
+		It is a design flaw in a hardware device.
+		
+	Software vulnaribilities
+		Usually occured by errors in OS or application code
+	Types of software vulnaribilities:
+		1. Buffer Overflow:
+			Buffers are a memomry area alocated to an appication. when data is written beyond the limit of buffer the application may use memory allocated to other applicatino which crash the system or compromise data.
+		2. Non validated input
+			Inputs can have malicious content
+		3. Race condition is a vulnaribility when a output donot follow the proper order or at a specific alloted time.
+		4. Weaknesses in security practices include using a new security algorithm instead of using pre tested and verified techniques and libraries for authentication, authorization and encryption.
+		5. Weak acces control problems. To avoid this physical access must be restricted and encryption techniques must be used.
+		
