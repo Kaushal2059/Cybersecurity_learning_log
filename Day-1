@@ -1,0 +1,68 @@
+Cybersecurity
+	. There is an estimation that there are one attack every 39 second nowadays
+	. Even if you dont have any social media or online accounts setup you have an online identity as long as you are using the internet
+	
+Types of organizational data
+	Traditional data
+		Transactional data : buying selling 
+		Intellectual property : patents, trademarks and new product plans
+		Financial data : Income statements, balance statements and cash flow statements
+	
+	Internet of Things(IOT) and Big data
+		IOT : large network of physical objects such as sensors software and other equipment connected to internet with the ability to collect and share data 
+		Large quantity of data because of increased storage due to cloud and virtualization is termed as big data.
+		
+	The McCumber Cube
+		 model framework created by John McCumber in 1991 to help organizations establish and evaluate information security initiatives by considering all of the related factors that impact them. 
+     The model has three dimensions:
+			1) The foundational principles for protecting the information system
+			2) The protection of information at each of its possible stages
+			3) The security measures to protect data
+		
+		1)The foundational principles for protecting the information system
+			> (Confidentiality) is a set of rules that prevent the access of data or sensitive inforamtion to unauthorized people. Confidentiality can be achieved by: 
+			Two factor authentication, data encryption and two factor authentication
+			> Integrity ensures system information or processes from unintentioal or accidental modifications. It can be done by hash function or checksum
+			> Availability means authorized person can access the information when needed and the ones without accss cannot. This can be achieved by maintaining equipment,
+			performing hardware repairs, keeping operating systems and software up to date, and creating backups.
+		
+		2)The protection of information at each of its possible stages
+			> Processing means the data that is being used to perforn an operation such as updating a database
+			> Storage refers to the data that is stored in a memory or in a permanet storage devices such as hard drive, USB etc
+			> Transmission refers to data travelling between information systems(data in transit)
+			
+		3)The security measures to protect data
+			> Awareness, training and education
+			> Technology refers to the software and hardware based solutions designed to protect information system such as firewalls
+			> Policy and procedures
+		
+Cyberattackes are a group of people who attempt to exploit vulnerability for personal or financial gain. They are interested in everything including 
+credit cards informatin to product design.
+
+Types of attackers
+	Amateurs: they use already existing tools in the internet to showcase their skill and cause harm. While they use basic tools,
+	the attacks can still have devastating consequences. Also known as 'script kiddies'.
+	Hackers:
+		This group of attackers break into computer systems or networks to gain access. Depending on the intent of their break in, they can be classified as:
+		> White hat attackers break into networks or computer systems to identify any weaknesses so that the security of a system or network can be improved. 
+		These break-ins are done with prior permission and any results are reported back to the owner.	
+		> Grey hat  may set out to find vulnerabilities in a system but they will only report their findings to the owners of a system if doing so coincides 
+		with their agenda. Or they might even publish details about the vulnerability on the internet so that other attackers can exploit it.
+		> Black hat take advantage of any vulnerability for illegal personal, financial or political gain.
+		
+	Orgaized hackers:
+		These attackers include organizations of cyber criminals, hacktivists, terrorists and state-sponsored hackers. They are usually highly sophisticated 
+		and organized, and may even provide cybercrime as a service to other criminals.
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			
