@@ -1,0 +1,156 @@
+Protecting your devices and Network
+	ways to protect your devices or network	
+		Turn on firewalls
+		Install trusted antivirus and antispyware
+		Manage your operating system and browser
+		Set up passeord protection
+		
+	Network security at home
+		Router can broadcast your SSID. Hackers will be aware about the present SSID and default password and thus it must be changed.
+		Always turn on encryption as in new it comes disabled
+		
+	Public wifi risks
+	
+	Is your data permanently deleted? No, not until the dard drive is completely destroyed. In order to delete the data permanently, it must be overwritten with ones and zeroes multiple times. SDelete for windows claims to be able to do it. Shred for linux and Secure empty trash for Mac OS
+
+Safeguarding your online privacy
+	Two factor authentication 
+	Open authorization: It is an open standard protocol that allows you to use your credentials to access third-party application without exposing your password
+	
+Cybersecurity Devices and technologies
+	
+	Security appliances:
+		Routers: It is a technology for interconnection between network segments with basic network filtering capabilities while it can also be used to identify which computer can communicate to which.
+	
+	Firewalls:
+		It can look deep into the traffic and identify malicious behaviour. Firewalls can have sophisticated security policies applied to the traffic passing through it.
+		
+	Intrusion prevention systems	
+		use a lot of traffic signatures that maches and blocks malicious traffic.
+		
+	Virtual Private network(VPN)
+		creates a tunnel to communicate with a private network remotely.
+		
+	Antimalware or antivirus	
+		These system blocks malicious codes to be executed by behaviour analysis or signatures
+		
+	Other security devices	
+		Other security devices include web and email security appliances, decryption devices, client access control servers and security management systems.
+		
+Firewalls
+	These technologies are designed to control or filter which communication are allowed in and which are allowed out of a device or a network. It can be installed in each of the device or can act as a standalone system protecting all the devices in the network.
+	Its types are:
+		Network layer firewall filters communication based on source and destination IP addresses.
+		Transport layer firewall filters communication based on source and destination data ports, as well as connection states.
+		Application layer firewall filters communicatio based on application, program or service.
+		Context aware layer firewall filters communication based on the user, device, role application type and threat profile.
+		Proxy server filter web requests such as URLs, domain names and media types
+		Reverse proxy server protect hide, offload and disdtrbute access to web servers.
+		Network address translation(NAT) firewall hides or masquerades the private address of the network hosts.
+		Host based firewall filters ports and service calls on a single computer OS.
+		
+Port Scanning
+	It is a process of scanning a computer, server or other network hosts for open ports. Zenmap can be used for scanning for open ports
+		Different ports:
+			21 = FTP
+			22 = ssh
+			25 = SMTp
+			80 = http
+			443 = https 
+			3389 = Microsoft remote desktop protocol
+			
+Intrusion detection(IDS) and prevention system(IPS)
+	these are security measures deployed on a network to detect and prevent malicious activities
+		
+	Intrusion detection	
+		It constantly scans the network for traffic and data and when detects a malicious actividies creates a log and alerts the system administration. It cannot take any action and thus will not prevent any intrusion. It detects, logs and report.
+		The constant monitoring slows the system and thus IDS is kept offline outside of the network. Generally Switch and HUB mirros the data and sends it to IDS.
+	
+	Intrusion Prevention system(IPS)
+		IPS blocks the traffic based on rules and signatures. One of the most famous IPS is Snort which is capable of port scanning, loggig, content searching and matching and more.
+		
+Real time detection:	
+	Requires constant scanning by using IDS or IDP technologies and using next generation scanning technologies with connection to online global threat centers.
+	DDoS threat is the biggest threat requiring real time detection.  These attacks are extremely difficult to defend against because the attacks originate from hundreds, even thousands, of zombie hosts, and the attacks appear as legitimate traffic.
+	
+Protecting against malware
+	One way to be protected from malware is using enterprise level malware detection solution which can be deployed on host endpoints and analyzes milliions of files and matches it eith hundred of millions of other analyzed malware which help in identifying ATP.
+	
+Security based practices:
+	1. Perform risk assessment means knowing and understanding the value of data that will affect security expenditure.
+	2. Creating a security policy: 
+	3. Physical security measures by restricting access to server closet
+	4. Human Resource security measures by completing backgroud checks to every employees.
+	5. Perform and test backups by performing backup and testing recovery of data from backup regularly.
+	6. Maintain security paches and updates by constantly updating servers, networks and software
+	7. Employ access control by configuring user roles and level of privilege and strong user authentication
+	8. Regularly testing incidence response
+	9. Implementing network monitoring, analytics and management tools
+	10. Implement network security devices
+	11. Implement a comprehensive endpoint security appliances
+	12. Educate users and
+	13. Encrypt data
+	
+Behaviour apploach to cybersecurity
+	Behaviour based cybersecurity:
+		Analyzing and monitoring the communication between users and any abnormal communication is considered as anamolies.
+		Two behaviour based solution models:
+		1. Honeypots: It is a technique where user is lured in by appealing to their predicted anamolous behavious and when falls in the trap, the administrator monitors, logs and analyzes the behaviour to prepare a better defence.
+		2. Cisco Cyber Threat defence Solution Architecture: Its major aim is to provide greater visibility on who is carrying out the attack, how and from where by using manby security technologies.
+		
+	Netflow:
+		It is a technology imbedeb in Switches, router and firewall to report information about data entering, leaving and travelling through the network which can be used to establish behaviour on more than 90 attributes. Such as source and destination IP address, ports etc.
+		It includes who and what devices are in the network and when and how users and devices access the network.
+		
+	Penetration testing
+	It is anctivity of accessing a computer devices by breaching code, people, system and processes to uncover vulnaribilities with the motive of making a system more secure and able to withstand probable security thrats in future.
+	Five steps of penetration testing include:
+		1. Planning:
+			In this process information about the targeted system or network is gathered including potential vulnaribilities and expliots. It also infloves active or passive footprint gathering.
+		2. Scanning
+		Active reconnaissance is carried to find out vulnaribilities that can be exploited. Which includes:
+			In this step:
+				port scanning is carried out
+				Vulnaribility scanning to identify potential exploitable vuknaribiities
+				Establishing an active connection to a target(enumeration) to identify user account, system accout and admin account
+		3. Gaining access:
+			In this step the pen tester will attempt to enter the system and get access to target system and sniff network traffic.
+			The methods can be
+				1. Launching an exploit with a payload into the system
+				2. Breaching physical barriers to assets
+				3. Social engineering
+				4. Exploiting website vulnaribilities
+				5. exploiting software and hardware vulnerabilities or misconfigurations
+				6. breaching access controls security
+				7. cracking weak encrypted Wi-Fi.
+		4. Maintainig acces:
+			A pen tester will maintain acces to find out vulnerable system
+		5. Analysis and reporting
+	
+	Impact reduction:
+		Actions that can be taken to reduce impact of any cyberattack
+			1. Communicate the issue: All employeess should be informed to take communicated actions and clients should be informed through direct communication and official announcements.
+			2. Be sincere and accountable: Respond to breach honestly and taking responsibility
+			3. Provide the details: Explain why the breach took place and what systems are compromised
+			4. Find the cause: Take steps to understand the cause and hire experts for forensics and research
+			5. Apply lessons learnt
+			6. Check and check again since attackers often leave a backdoor for future attacks
+			7. Educate by raising awareness, training on how to avoid future breaches.
+			
+	What is risk management and its processes:
+	It is the continuous process of accessig and identifying risk. Though any system cannot be risk free, its impact can be minimized. The cost of control should never exceed the value of the assets that we are protecting.
+		1.Frame the risk : In this step we should identify threats that increase risk. 
+		2.Access the risk: Some risks are dangerous and it can bring a complete system to a halt while others can be minor. This can be analyzed in quantitive and qualitative way.
+		3.Respond to the risk: Develop an access plans where risk can be eliminated, mitigated ,accepted or transferred.
+		4.Monitor the risk: Risks that have been accepted need to be constantly monitored including that have been mitigated, transferred or eliminated.
+				
+Cisco's approach to cybersecurity
+	Cisco's CSIRT (Computer Security Incidence Responce Team)
+	Security Paybook: Copanies should compile the information about incidence prevention and response.
+	Tools for Incident Detection and Prevention;
+		Two of these are:
+			SIEM- Security information and Event management collects alerts, logs and other real time nd historical data from security devices to facilitate early detection of cyber attacks.
+			DLP- Data loss prevention motnitors data in three stages: in use, in motion and in rest and used to prevent data being stolen or escaping a network.
+
+	
+	
