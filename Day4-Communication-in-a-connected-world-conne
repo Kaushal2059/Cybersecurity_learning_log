@@ -1,0 +1,60 @@
+Network Types:
+	Local networks:
+		Local network is a collecion of devices inside a home or a office which can range form 2 computers to hundred of computers. Its connected with the purpose of sharing devices such as printers, documents etc
+	The internt called as network of networks because it literally connects hundreds of local networks
+	Types of networs:
+		Small home networks: connects a few computers with each other and to the internet
+		Small Office and Home Office Network: It allows a computer in a home office or a remote office to connect to a corporate network and also access centralized, shared resources.
+		Medium to large networks: It can have many locations with multiple interconnected hosts. For example network of corporations or school.
+		World Wide Networks: Internet can be considerd as world wide networks
+		
+	Mobile Devices:
+		Smartphone, Tablet, Smartwatch, Smart Glasses
+		
+	Connected home devices:
+		Security system
+		Appliances
+		Smart TV
+		Gaming Console
+		
+	Other connected devices:
+		Smart cars
+		RFID Radio frequency identificaton (RFIDs) can be placed in our objects to track them or monitor sensors for many conditions
+		Sensors and Atuators: Sensors can collect or sense factors such as temperature, humidity etc and actuators can perform action 
+		Medical devices: such as pacemakers, insulin pumps, and hospital monitors provide users or medical professionals with direct feedback or alerts when vital signs are at specific levels.
+
+Data Transmission:
+	Types of personal data:
+		Volunteer data: Is a type of data that you agree to be shared and stored
+		Inferred data: Data that you generate by your activity. Example data being collected by credit card by the uses of it
+		Observed data: Phone tracking locaton and being transmitted to career
+		
+	The bit:
+		Computer store and transmit data in the form of 0 and 1 which is termed as bit and a collecton of eight bits is known as byte.
+		
+Common method of data transmission:
+	Data transfers from one source to another by different media such as cable or through electronic waves in air. It is transmitted as pulses of electricity or pulses of light or radio waves.
+	SIgnals can be converted many times before reaching the destination. Common methods of signal transmission are:
+		1> Electrical signals: data is dransmitted through electronic pulses on a copper wire
+		2> Optical signals: data is transferred by converting into light pulses
+		3> Wireless signals: Transmission is achieved by transferring radiowaves, microweb or infrared.
+		
+Bandwidth and Throughput:
+	Bandwidth is a capacity of a medium to carry data. or the amount of data that can transfer from one place to another in given amount of time. Generally measured as the number of bits(theoretically) that can be sent per second.'
+	Common bandwidth measurement are:
+		thousands of bits per second(kbps)
+		millions of bits per second(mbps)
+		billins of bits per second(gbps)
+		
+	commnly used units of measurement;
+	bits per second(bps) 1 bps is the fundamental unit of bandwidth
+	kilobits per second(kbps) 1kbps = 1000bps
+	megabits per second(mbps) 1mbps = 1000000bps
+	gigabits per second(gbps) 1 gbps = 1000000000bps
+	terabits per second(tbps) 1tbps = 1000000000000bps
+	
+	Throughput:
+		Amount of data sent and received over a connection including any delay that might occur. 
+
+Communication in a connected world summary
+	
