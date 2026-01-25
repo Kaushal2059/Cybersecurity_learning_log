@@ -1,0 +1,53 @@
+Network components, types and connections:
+	
+	Clients and servers:
+		All computers connected to a network and participating in network communication are hosts. A host can be a client, server or both based on the software isntalled in it. 
+		servres are hosts that have softwares required to provide information to users. Every services require a seperate server software. 
+		Clients are computers that have software installed to request information form the server and display them.
+		
+	Peer to peer network:
+		A kind of network where all the connected nodes act as a client as well as a server. For example: Two computers in a home network connected to each other to access each others information.
+		Advantages: Easy to setup, less complex, lower cost, can be used for simple task
+		Disadvantages: No centralized administration, not as secure, not scalable, slower performance as any device can be used as client or server.
+		
+	Peer to peer aplication:
+		Both client and server can send and receive a message at the same time
+		
+	Multiple roles in a network:
+		A host can and should be able to provide many services at the same time. For instance a server should provide services to multiple client at a time.
+		Similarly a client is accessing many services simultaneously which of all reqire a seperate service software.
+		
+	Network components:
+		Network Infrastructure Symbols:
+		
+		Network Infrastructures:
+			It is a platform that supports the network and provides a reliable and stable way for our communicaton to occur. 
+			Components of network infrastructures:
+				End devices: Computer, laptop, mobile phone printer etc. (Data originates in the end device, flows through the network and reaches to the end device)
+				Intermediate devices: Router, Switch etc.
+				Network media: wireless media, lan, wan
+				
+		ISP connectivity optoins:
+			ISP service
+				provides a connectivity from a home network to the internet. Many ISPs connect with each other to form a network of links that interconnect users all over the world.
+				Fiber-optics is the primary medium that connects the internet.
+				
+			ISP connections:
+				The interconnection of ISPs that forms the backbone of the internet is a complex web of fiber-optic cables with expensive networking switches and routers
+				that direct the flow of information between source and destination hosts. 
+				Though a modem can directly connect your computer to the internet that option should not be used as your computer is not eqquipped with necessary security measures. 
+				Thus, a router is used between a modem and your physical computer
+				
+			Cable and DSL connection:
+				Cable: Generally provided by cable telivison service providers, the same coaxial cable delivering calbe tv is responsible to carry internet signals. A modem seperates the internet data signal from other signals.
+				It is generally known for high bandwidth and always on connection to the internet. 
+				DSL(Digital Subscriber lane): almost same as cable but runs through telephone line rathet than cable television. DSL runs through a telephone line where a telephone line is seperated into three channels:
+				one responsible for telephone connectoin without disrupting the internet, other is responsble for receiving data or download. and the last is responsible for uplod or sending data. Generally upload speed is slower than the download speed.
+				The speed of DSL depends upon the distnce form the central office. the father you go, slower your internet becomes and quality of phone line used.
+				
+			Additional Connectivity Options:
+				for home users:
+					Cellular: uses a cell phone netwrok to connect to the internet. Performance depend on the cell phone and the cellular tower it is connected to.
+					Satellite: obtained by satellite dishes and its clear sight to the satellite. Any overhead disturbance might disrupt the signal and bandwidth. Installation cost is high but appropriate for areas with no direct connection to the cabe and DSL.
+					Dial-up telephone: A medium that uses any phone line and a modem for connection. Internet speed is very slow and thus be only considered for places with no other alternatives for faster connectivity.
+					
