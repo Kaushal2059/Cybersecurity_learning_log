@@ -1,0 +1,83 @@
+Network technologies in the home:
+	
+	LAN wireless frequencies:	
+		frequently used wireless technologies in home network are in between unlicesed 2.4GHz and 5 GHz
+		
+		Generally bluetooth uses 2.5 ghz band and is limitd to slow speed and short range communication. It is preffered because of its many to one feature as multiple devices such as keyboard, mouse, speakers can be connected at once.
+		
+		IEEE 802.11 devices uses range between 2.5 and 5 ghz and transmit a much higher power level giving them a great range and improved throughput.
+		
+	Wired network technologies:
+		Many home devices support wireless communicaton while some use an unshared communications through wired channels. Ethernet protocal is the most commonly used wired protocol.
+	
+	Different wired technologies:
+		Category 5e cable: Category 5e is the most common wiring used in a LAN. The cable is made up of 4 pairs of wires that are twisted to reduce electrical interference.
+		Coaxial cable: Coaxial cable has an inner wire surrounded by a tubular insulating layer, that is then surrounded by a tubular conducting shield. Most coax cables also have an external insulating sheath or jacket.
+		Fiber_optic: Fiber-optic cables can be either glass or plastic with a diameter about the same as a human hair and it can carry digital information at very high speeds over long distances. 
+		Fiber-optic cables have a very high bandwidth, which enables them to carry very large amounts of data.	
+		
+	Wireless Standards:
+		
+		Wifi Networks:
+			Several standards have been established to guarantee that wireless devices are capable of communication. 
+			They outline the RF spectrum utilized, data transmission rates, the method of conveying the information, and additional details.
+			The primary entity in charge of developing wireless technical standards is the Institute of Electrical and Electronics Engineers (IEEE).
+
+			The WLAN environment is regulated by the IEEE 802.11 standard. 
+			Amendments to the IEEE 802.11 standard outline features for various wireless communication standards. 
+			Wireless standards for local area networks operate on the 2.4 GHz and 5 GHz frequency bands. These technologies are collectively known as Wi-Fi.
+
+			A separate entity, called the Wi-Fi Alliance, handles the testing of wireless LAN devices produced by various manufacturers. 
+			The Wi-Fi symbol on a device indicates that it complies with standards and should function with other devices that utilize the same standard.
+
+			Wireless standards are consistently enhancing the connection and speed of Wi-Fi networks. 
+			Being informed about new standards as they emerge is crucial since wireless device manufacturers will swiftly adopt these standards in their latest products
+
+
+		Wireless settings:
+			Settings that has to be configured with wireless routers using the 802.11 standards are:
+				Network mode:
+					Determines te types of technology that must be supported like 802.11b, 802.11g, 802.11n or Mixed mode
+				Network name(SSID): this is used to identify WLAN and all that devices wishing to participate in WLAN must have a SSID
+				Standard channel: Specifies the channel over which the communication has to occur and usually set to Auto to allow access point to determine the optimum channel to be used.
+				SSID(Service Set Identifier) Broacast: Determines if the SSID will be broadcast to all devices within range. By default, set to Enabled.
+
+		Network mode:
+			The 802.11 protocol can provide increased throughput based on the wireless network environment. 
+			If all wireless devices connect with the same 802.11 standard, maximum speeds can be obtained for that standard. 
+			If the access point is configured to accept only one 802.11 standard, devices that do not use that standard cannot connect to the access point.
+
+			A mixed mode wireless network environment can include devices that use any of the existing Wi-Fi standards. 
+			This environment provides easy access for older devices that need a wireless connection but do not support the latest standards.
+
+			When building a wireless network, it is important that the wireless components connect to the appropriate WLAN. This is done using the SSID.
+
+			The SSID is a case-sensitive, alphanumeric string that contains up to 32 characters. It is sent in the header of all frames transmitted over the WLAN.
+			 The SSID is used to tell wireless devices, called wireless stations (STAs), which WLAN they belong to and with which other devices they can communicate.
+
+			We use the SSID to identify a specific wireless network. It is essentially the name of the network. Wireless routers usually broadcast their configured SSIDs by default. 
+			The SSID broadcast allows other devices and wireless clients to automatically discover the name of the wireless network. When the SSID broadcast is disabled, you must manually enter the SSID on wireless devices.
+
+			Disabling SSID broadcasting can make it more difficult for legitimate clients to find the wireless network. 
+			However, simply turning off the SSID broadcast is not sufficient to prevent unauthorized clients from connecting to the wireless network. 
+			ll wireless networks should use the strongest available encryption to restrict unauthorized access.
+						
+			
+	Setup a home router:	
+	
+		First time setup:	
+			
+			Numerous wireless routers made for residential use come with an automatic setup tool that can configure the router's basic settings. 
+			These tools typically need a PC or laptop linked to a wired port on the router. If a device with a wired connection isn't available, 
+			it might be essential to set up the wireless client software on the laptop or tablet initially.
+
+			To establish a wired connection to the router, insert an Ethernet patch cable into the computer's network port. 
+			Insert the opposite end into a LAN port on the router. Avoid inserting the cable into the port or interface marked “Internet”. 
+			The internet port will link to the DSL or cable modem. Certain home routers might include an integrated modem for internet access. 
+			In such a situation, ensure that the connection type aligns with your internet service. 
+			A cable modem will feature a coaxial port designed for a BNC-type connector. A DSL connection features a port for a phone-style cable, typically an RJ-11 plug.
+
+			Once it's verified that the computer is linked to the network router and the NIC link lights show an operational connection, the computer will require an IP address.
+			 The majority of network routers are configured to allow the computer to receive an IP address automatically from a local DHCP server that is automatically set up on the wireless router. 
+			 If the computer lacks an IP address, consult the router documentation and set up the PC or tablet with a distinct IP address, subnet mask, default gateway, and DNS details
+							
