@@ -1,0 +1,56 @@
+Communication principles:
+	Netwoks need rules or protocols to ensure sucessful communication:
+	
+	Communiation protocols: for the communication to occur we need method of communication, language to be used and the confirmation:
+	Why protocols matter:
+		Inorder for the computer to properly communicate across the network and computers in a local network must follow the same protocol.
+		
+		Many aspects of communication as defined by networking protocols:
+			Message format:
+				Any message must follow a specific format or structure which depends upon the channel used for communication and the type of message.
+			Message size:
+				Rules governing the size of the message sent over the network are very strict and can be different depending upon the channel used. 
+				If a long message is to be send, we might even need to break it down inorder for the message to be sent rapidly. 
+			Timing:
+				It determines the rate at which network are transmitted across the network and also affect when an individual host can send a data and total number of data that can be sent at a time.
+			Encoding:
+				Message are decoded into bits by the host and the bit is encoded in a pattern of light waves, electrical impulse or sound waves depending upon the medium. The receiver when receive the data it decodes the signals to interpret the message.
+			Encapsulation:
+				Each transmitted message needs a header that contins a addressing infomation that identifies the source and the destinatoin hosts, else it cannot be delivered.
+				The process of adding this data is known as encapsulation. There might also be other data that ensures the message is deliverd to the correct host.
+			Message patterns:
+				some message needs an acknowledgement whether it received the host before sending the other message while others can simply be sent continously.
+			
+	Communication Standards:
+		Devices in a bubble:
+			A computer sees itself in a bubble in a network.
+			Protocols is what make the communication by breaking down the communication and helping the data reach the final destination.
+			IPv6 and DHCP protocol provide ip address to the computer including what device it belongs to, its default gateway and where the packets needs to be sent in the another network. 
+			And the address of the dns server when the device knows the domain name but needs the destinaton ip address.
+			TCP protocols make sure about the reliability as the correct packet is received and if not receied than resends the packet.
+			
+	The internet and standards:
+		Networking and internet standards ensure that all devices connecting to the network implement the same set of rules or protocols in the same manner. 
+		Using standards, it is possible for different types of devices to send information to each other over the internet. 
+		
+	Network standards Organizations:
+		An internet standard is the end result of a comprehensive cycle of discussion, problem solving, and testing. 
+		These different standards are developed, published, and maintained by a variety of organizations. 
+		When a new standard is proposed, each stage of the development and approval process is recorded in a numbered Request for Comments (RFC) document so that the evolution of the standard is tracked. 
+		RFCs for internet standards are published and managed by the Internet Engineering Task Force (IETF).
+		
+	Network Communication Models:
+		Network protocols:
+			Ethernet protocal governs NIC to NIC in the same network
+			Internet protocols(IP) governs communication all the way from the soure to the destination.
+			TCP makes sure that data arrives in correct order.
+			HTTP governs the exchances of HTML
+		
+		The protocal stack:
+			Successful communication requires a use of several protocal.
+			In a TCP/IP model:
+				Application: HTTP
+				Transport: TCP
+				Internet: IPv4/IPv6
+				Network access : Ethernet protocol
+				
