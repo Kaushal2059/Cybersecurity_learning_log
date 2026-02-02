@@ -1,0 +1,47 @@
+Network media:	
+	 Media provides a channel over which the message travels from source to destination. 
+	 It povides the connectivity and path for communication to travel over the network. 
+	 
+	 Network media types:
+		Metal wires within cables: Data is encoded into electrical impulses
+		Glass or plastic fibers within cables: Data is encoded into pulses of light
+		Wireless transmissoin: Data is encoded via modulation of specific frequencies of electromagnetic waves.
+		
+		There are four main criteria for choosing network media:
+		Maximum distance that the media can sucessfully carry a signal
+		environment in which the media will be installed.
+		Amount of data and at what speed it should be transmitted
+		cost of media and intallation
+		
+		Commom network cables:
+			Twisted-pair cable
+			Coaxial cable
+			fber-optic cable
+			
+	Framing the Message with Ethernet:
+		Preamble - 7 bytes : Used to get the receiving NIC in sync with the receiving bits that are comming down the cable
+		Start Frame Delimiter - 1 byte: Indicates to the receiving NIC following the SFD will be the actual information associated with the ethernet frames
+		Destination MAC address 6 bytes: Is the MAC address of the destination on that network
+		Source MAC address -6 bytes: MAC address of the device that generated the ethernet frame
+		Length Type - 2 bytes: It might be the length of data  or what kind of data is it
+		Data 46-1500: It is the main data 
+		Frame check sequence - 4 bytes: Used by receiving device for error checking
+		
+	Encapsulation:
+		The process of placing one message format into another message format is known as encapsulation. For instance puttig letter into envelope. 
+		Each computer message is encapsulated in a specific format calld frame before it is sent over the network. frame acts as the envelop which contains the information about the sourse and the destination.
+		The format and contents of a frame are determined by the type of message being sent and the channel over which it is communicated. 
+		
+		Example of message foramtting and encapsulation:
+		Analogy:
+		Network:
+		
+	The Access Layer:
+		The access layer is the part of the network in which people gain access to other hosts and to shared files and
+		printers. The access layer provides the first line of networking devices that connect hosts to the wired Ethernet
+		network. Within an Ethernet network, each host can connect directly to an access layer networking device
+		using an Ethernet cable. Ethernet hubs contain multiple ports that are used to connect hosts to the network. Only one message can be sent at a time or else collision can occur.
+			
+		Ethernet switches:
+			
+		MAC address tables:
