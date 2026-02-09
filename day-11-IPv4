@@ -1,0 +1,24 @@
+		
+	Purpose of an IPV4 address
+		It is most for a host to have a IPV4 adress to participate onn the internet and almost every LANs today.
+		It must be uniquely configured.
+		
+	Octets and Dotted-Decimal Notation
+		IPv4 addresses are 32 bits in length. Here is an IPv4 address in binary:
+		11010001101001011100100000000001
+
+		Which is very tough to read.For this reason, the 32 bits are grouped into four 8-bit bytes called octets like this:
+		11010001.10100101.11001000.00000001
+
+		That's still difficult to read. That's why we convert each octet into its decimal value, separated by a decimal point or period.
+		The above binary IPv4 becomes this dotted-decimal representation:
+		209.165.200.1
+		
+	The IPv4 Address Structure
+		if 192.168.2.0 is the ip address 198.168.6 is the network component and 0 is the host
+		Inside a network, each of the nodes needs to have the same network octate and the host part has to be unique
+		
+	With IPv4 addressing, multiple logical networks can exist on one physical network if the network portion of the logical network host addresses is different. 
+	For example: three hosts on a single, physical local network have the same network portion of their IPv4 address (192.168.18) and three other hosts have 
+	different network portions of their IPv4 addresses (192.168.5). The hosts with the same network number in their IPv4 addresses will be able to communicate 
+	
