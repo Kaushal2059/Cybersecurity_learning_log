@@ -1,0 +1,33 @@
+IPv4 and network segmentation
+IPv4 unicast, broadcast and multicast:
+	Unicast:
+		Destined to a single device
+		one device sending a message to one other device in one-to-one communications.
+		Source IP can only be a uncast that mean a packet can only orginate from a single device
+		IPv4 unicast host addresses are in the address range of 1.1.1.1 to 223.255.255.255 with some reservations for special purposes.
+		
+	Broadcast:
+		Destined to all the nodes on the network.(one to all)
+		roadcast traffic should be limited so that it does not adversely affect the performance of the network or devices.
+		
+	Multicast:
+		Multicast transmission reduces traffic by allowing a host to send a single packet to a selected set of hosts that subscribe to a multicast group.
+
+		A multicast packet is a packet with a destination IP address that is a multicast address. IPv4 has reserved the 224.0.0.0 to 239.255.255.255 addresses as a multicast 
+		range.
+
+		Hosts that receive particular multicast packets are called multicast clients. The multicast clients use services requested by a client program to subscribe to the 
+		multicast group.
+
+		Each multicast group is represented by a single IPv4 multicast destination address. When an IPv4 host subscribes to a multicast group, the host processes packets 
+		addressed to this multicast address, and packets addressed to its uniquely allocated unicast address.
+
+		Routing protocols such as OSPF use multicast transmissions. For example, routers enabled with OSPF communicate with each other using the reserved OSPF multicast 
+		address 224.0.0.5. Only devices enabled with OSPF will process these packets with 224.0.0.5 as the destination IPv4 address. All other devices will ignore these 
+		packets.
+				
+	Types of IPv4 Addresses
+		Public IPv4 addresses are addresses which are globally routed between internet service provider (ISP) routers.
+		However, not all available IPv4 addresses can be used on the internet. There are blocks of addresses called private
+		addresses that are used by most organizations to assign IPv4 addresses to internal hosts.
+		
