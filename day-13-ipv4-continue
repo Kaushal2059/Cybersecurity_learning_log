@@ -1,0 +1,77 @@
+	
+	Routing to the internet:
+	Private IPv4 address and Network Address Translaton(NAT)
+		Before the ISP can forward this packet, it must translate the source IPv4 address, which is a private address, to a public IPv4 address using Network Address Translation (NAT). 
+		NAT is used to translate between private IPv4 and public IPv4 addresses. This is usually done on the router that connects the internal network to the ISP network. 
+		Private IPv4 addresses in the organization’s intranet will be translated to public IPv4 addresses before routing to the internet.	
+		
+	Special use IPv4 Addresses:
+		There are certain addresses, such as the network address and broadcast address, that cannot be assigned to hosts. There are also special addresses that can be assigned to hosts,
+		but with restrictions on how those hosts can interact within the network.
+	
+	Loopback address:
+		addresses such as 127.0.0.0/8 or 127.255.255.254 are more commonly identified as 127.0.0.1 and used by host to direct traffic to itself.
+		
+	Link local address:
+		Link-local addresses (169.254.0.0 /16 or 169.254.0.1 to 169.254.255.254) are more commonly known as the Automatic Private IP Addressing (APIPA)
+		addresses or self-assigned addresses. They are used by a Windows client to self-configure in the event that the client cannot obtain an IP addressing 
+		through other methods. Link-local addresses can be used in a peer-to-peer connection but are not commonly used for this purpose.
+		
+	Legacy Classful Addressing:
+		In 1981, IPv4 addresses were assigned using classful addressing as defined in RFC 790 (https://tools.ietf.org/html/rfc790), Assigned Numbers. 
+		Customers were allocated a network address based on one of three classes, A, B, or C. The RFC divided the unicast ranges into specific classes as follows:
+
+		Class A (0.0.0.0/8 to 127.0.0.0/8) - Designed to support extremely large networks with more than 16 million host addresses. Class A used a fixed /8 prefix
+			with the first octet to indicate the network address and the remaining three octets for host addresses (more than 16 million host addresses per network).
+		Class B (128.0.0.0 /16 - 191.255.0.0 /16) - Designed to support the needs of moderate to large size networks with up to approximately 65,000 host addresses. 
+			Class B used a fixed /16 prefix with the two high-order octets to indicate the network address and the remaining two octets for host addresses 
+			(more than 65,000 host addresses per network).
+		Class C (192.0.0.0 /24 - 223.255.255.0 /24) - Designed to support small networks with a maximum of 254 hosts. Class C used a fixed /24 prefix with the first 
+			three octets to indicate the network and the remaining octet for the host addresses (only 254 host addresses per network).
+		Note: There is also a Class D multicast block consisting of 224.0.0.0 to 239.0.0.0 and a Class E experimental address block consisting of 240.0.0.0 - 255.0.0.0.
+
+		At the time, with a limited number of computers using the internet, classful addressing was an effective means to allocate addresses.
+		As shown in the figure, Class A and B networks have a very large number of host addresses and Class C has very few. Class A networks accounted for 
+		50% of the IPv4 networks. This caused most of the available IPv4 addresses to go unused.
+		
+		In the mid-1990s, with the introduction of the World Wide Web (WWW), classful addressing was deprecated to more efficiently allocate the limited IPv4 address space. 
+		Classful address allocation was replaced with classless addressing, which is used today. Classless addressing ignores the rules of classes (A, B, C). 
+		Public IPv4 network addresses (network addresses and subnet masks) are allocated based on the number of addresses that can be justified.
+		
+	Reeginal internet registries:	
+		Both IPv4 and IPv6 addresses are managed by the Internet Assigned Numbers Authority (IANA). 
+		The IANA manages and allocates blocks of IP addresses to the Regional Internet Registries (RIRs). 
+	
+		RIRs are responsible for allocating IP addresses to ISPs who provide IPv4 address blocks to organizations and smaller ISPs. 
+		Organizations can also get their addresses directly from an RIR 
+		
+		AfriNIC (African Network Information Centre) - Africa Region
+		APNIC (Asia Pacific Network Information Centre) - Asia/Pacific Region
+		ARIN (American Registry for Internet Numbers) - North America Region
+		LACNIC (Regional Latin-American and Caribbean IP Address Registry) - Latin America and some Caribbean Islands
+		RIPE NCC (Réseaux IP Européens Network Coordination Centre) - Europe, the Middle East, and Central Asia
+		
+	Network Segmentation
+		When a host propagates a (Address Resolution Protocol)ARP request to know the associated MAC address, switches transmit information to all the hosts exept the one it originated from. 
+		But the router donot broadcast wich is known as layer 2 broadcast domain.
+		
+	Broadcast domain and segmentation:
+	Routers Segment Broadcast Domains:
+	
+	Problems with Large Broadcast Domains:
+		A large broadcast domain is a network that connects many hosts. A problem with a large broadcast domain is that these hosts can generate excessive broadcasts 
+		and negatively affect the network by slowing operations because each broadcast packet must be processed.
+		
+	Communication between networks:
+		We can solve the problem by creating a samaller broadcst domain known as subnettig where the smaller network space are called subnets. Subnetting reduces overall network 
+		traffic and improves performance.
+		
+	Reasons for Segmenting Networks:
+		reduces traffic and improve performance
+		administrator can implement security policies like which subnet are allowed to communicate to each other
+		Redces number of devices affected by malicious behaviour
+		
+	Ways of using subnet:	
+		Subnetting by loacation: like seperate network for seperate regions, district, floor etc
+		Subnetting by Group or function: seperate network for administration, HR, Accounting, student etc
+		Subnetting by device type: seperate network for host, server etc.
