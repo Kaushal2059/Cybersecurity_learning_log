@@ -1,0 +1,37 @@
+IPv4 Issues
+	The Need for IPv6
+	
+	RIR IPv4 Exhaustion Dates:
+		IPv4 has a theoretical maximum of 4.3 billion addresses and is running out of addresses.
+		
+		When the IETF began its development of a successor to IPv4, it used this opportunity to fix the limitations of IPv4 and include enhancements. 
+		One example is Internet Control Message Protocol version 6 (ICMPv6), which includes address resolution and address autoconfiguration not found in ICMP for IPv4 (ICMPv4).
+				
+	IPv4 and IPv6 Coexistence
+		Migration techniques from IPv4 to IPv6:
+			Dual stack:
+				Dual stack allows IPv4 and IPv6 to coexist on the same network segment. Dual stack devices run both IPv4 and IPv6 protocol stacks simultaneously. 
+				Known as native IPv6, this means the customer network has an IPv6 connection to their ISP and is able to access content found on the internet over IPv6.
+			Tunneling:
+				Tunneling is a method of transporting an IPv6 packet over an IPv4 network. The IPv6 packet is encapsulated inside an IPv4 packet, similar to other types of data.
+			Translation:
+				Network Address Translation 64 (NAT64) allows IPv6-enabled devices to communicate with IPv4-enabled devices using a translation technique similar to NAT for IPv4. 
+				An IPv6 packet is translated to an IPv4 packet and an IPv4 packet is translated to an IPv6 packet.
+				
+	IPv6 Addressing
+		represented using hexadecimal number
+		
+	16-bit Segments or Hextets
+		IPv6 addresses are 128 bits in length and written as a string of hexadecimal values. Every four bits is represented by a single hexadecimal digit; for a total of 32 hexadecimal values. 
+		IPv6 addresses are not case-sensitive and can be written in either lowercase or uppercase.
+		the preferred format for writing an IPv6 address is x:x:x:x:x:x:x:x
+		Preferred format means that you write IPv6 address using all 32 hexadecimal digits.
+		
+	 IPv6 Formatting Rules
+		There are two rules that can be used to reduce the hexadecimal number used to represent a hexadecimal number:
+			Rule 1: Omit Leading 0s:
+				example 0211:2ad2:0000:0000:0000:02db:2210:2dde can be written as 211:2ad2:0:0:0:2db:2210:2dde
+			Rule 2: Double column
+				0211:2ad2:0000:0000:0000:02db:2210:2dde 0211:2ad2::02db:2210:2dde
+					Also 211:2ad2::2db:2210:2dde is correct when we combine both rules
+			Note: the double column cannot be used more than once or else it will create ambiguity because of the ambiguity in the number of 0s. Best apply at the longest string.
