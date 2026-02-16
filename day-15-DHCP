@@ -1,0 +1,38 @@
+Dynamic addressing with DHCP Operation:
+			Static and dynamic addressing
+				Static IPv4 Address Assignment
+					With a static assignment, the network administrator must manually configure the network information for a host. At a minimum, this includes the following:
+						IP address - This identifies the host on the network.
+						Subnet mask - This is used to identify the network on which the host is connected.
+						Default gateway - This identifies the networking device that the host uses to access the internet or another remote network.
+				Advantages:
+					Useful for printers, servers, and other networking devices that need to be accessible to clients
+					can provide increased control of network resources 
+				Disadvantages:
+					Time consuming
+					Errors are likely to occur as host only performs basic error checks
+					
+				When using static IPv4 addressing, it is important to maintain an accurate list of which IPv4 addresses are assigned to which devices. 
+				Additionally, these are permanent addresses and are not normally reused.
+				
+			Dynamic IPv4 Address Assignment
+				This is done using a protocol known as Dynamic Host Configuration Protocol (DHCP) which directly assigns IPv4 addresses, subnet mask, default gateway and other configuration informtaion 
+				It is preffered method for assigning IPv4 because it reduces the burden on network support staff and virtually eliminates entry errors.
+				Address are not permanently assigned to host permanently but is only leased for a period of time.
+				
+			DHCP servers:
+				Many home networks and small businesses use a wireless router and modem. In this case, the wireless router is both a DHCP client and a server. 
+				The wireless router acts as a client to receive its IPv4 configuration from the ISP and then acts as a DHCP server for internal hosts on the local network.
+				The router receives the public IPv4 address from the ISP, and in its role as a DHCP server, it distributes private addresses to internal hosts.
+				In addition to PC-based servers and wireless routers, other types of networking devices such as dedicated routers can provide DHCP services to clients, although this is not as common.
+				
+		 DHCPv4 Configuration
+			 DHCPv4 Operation:
+				Set of communication between the host wanting an IP address and the server providing the IP address.
+				Host sends a broadcast packet that contains MAC address of the device requesting a IP address called DHCP discover which is looking for DHCP server.
+				When a DHCP server receives the packet than offers with a DHCP offer that contains an Ip address that a host could use
+				when the host receives the offer packet containing the Ip address with subnet mask and the default gateway address it sends back the DHCP request packet that it will accept the offer.
+				The device then take the information and enter it in the IP address settings.
+				Then the server sends an ackowlwdgement packet stating the ip will be mapped to the associated MAC address of the host.
+				
+				
