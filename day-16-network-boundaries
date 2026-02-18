@@ -1,0 +1,34 @@
+Network Boundaries:	
+		Gateway to other networks:
+			Gateway is a way for traffic to leave one local network and be floated to another remote network.
+			If a computer need to communicate outside of the network that has to be done through a gateway. 
+			
+		Routers as Gateways:
+			The router provides a gateway through which hosts on one network can communicate with hosts on different networks. 
+			Each interface on a router is connected to a separate network.
+			The IPv4 address assigned to the interface identifies which local network is connected directly to it.
+			Each host must conatain a ipv4 address of router interface it is conneted to known as default gateway. 
+		
+		Routers as Boundaries Between Networks
+			Most DHCP servers are configured to assign private addresses to the hosts on the internal network, rather than internet routable public addresses. 
+			This ensures that, by default, the internal network is not directly accessible from the internet.
+			Many ISPs also use DHCP servers to provide IPv4 addresses to the internet side of the wireless router installed at their customer sites. 
+			The network assigned to the internet side of the wireless router is referred to as the external, or outside, network.
+			
+		 Network Address Translation(NAT)
+			Introduction to NAT
+				Used to convert private IP to public IP for communication between different hosts or networks in the internet
+				The router keeps a table of private ip address with the public address.
+					example:
+					Private IP					Public IP
+					192.168.1.2  -------------> 200.100.58.50
+					192.168.2.5  -------------> 200.100.58.51
+					
+				If a packet has to be sent by 192.168.1.2 to a external server with ip 200.100.5.5
+				When the packet is inside a private network, the packet looks like src - 192.168.1.2 and dest 200.100.5.5
+				when it has to leave the private network it turns out as src - 200.100.58.50 and dest 200.100.5.5 as the router assigns with a stored registered public address
+																				   
+																				   
+																				
+					
+				
