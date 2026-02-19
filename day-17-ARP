@@ -1,0 +1,50 @@
+The ARP process
+		
+		MAC and IP	
+		
+			Destination on same network
+			
+				Physical address (the MAC address) – Used for NIC-to-NIC communications on the same Ethernet network.
+				Logical address (the IP address) – Used to send the packet from the source device to the destination device.
+				The destination IP address may be on the same IP network as the source, or it may be on a remote network.
+				
+				Layer 2 physical addresses (i.e., Ethernet MAC addresses) are used to deliver the data link frame with the encapsulated IP packet from one NIC to another NIC that is on the same network.
+				If the destination IP address is on the same network, the destination MAC address will be that of the destination device.
+																				
+			Destination on Remote Network
+				When the destination IP address (IPv4 or IPv6) is on a remote network, the destination MAC address will be the address of the
+				host default gateway (i.e., the router interface).
+				
+			How are the IP addresses of the IP packets in a data flow associated with the MAC addresses on each link along the path to the destination? For IPv4 packets, this is done through a process called Address Resolution Protocol (ARP). 
+			For IPv6 packets, the process is ICMPv6 Neighbor Discovery (ND).
+				
+		Broadcast Containment
+			
+			The Ethernet Broadcast
+				An Ethernet broadcast is when the destination MAC address is 48 one-bits, or in hexidecimal, all Fs.
+				
+			Broadcast Domains
+				When a host receives a message addressed to the broadcast address, it accepts and processes the message as though the message was addressed directly to it. 
+				When a host sends a broadcast message, switches forward the message to every connected host within the same local network. 
+				For this reason, a local area network, a network with one or more Ethernet switches, is also referred to as a broadcast domain.
+				
+				If too many hosts are connected to the same broadcast domain, broadcast traffic can become excessive. 
+				The number of hosts and the amount of network traffic that can be supported on the local network is limited by the capabilities of the switches used to connect them.
+				As the network grows and more hosts are added, network traffic, including broadcast traffic, increases. To improve performance, it is often necessary
+				to divide one local network into multiple networks, or broadcast domains.
+				
+			Access Layer Communication
+				On a local Ethernet network, a NIC only accepts a frame if the destination address is either the broadcast MAC address, or else corresponds to the MAC address of the NIC.
+				Most network applications, however, rely on the logical destination IP address to identify the location of the servers and clients. 
+				The  problem that arises if a sending host only has the logical IP address of the destination host is "I need to send information to 192.168.1.7, but I only have the IPv4 address. I don't know which device has that IPv4 address"
+				
+				The sending host can use an IPv4 protocol called address resolution protocol (ARP) to discover the MAC address of any host on the same local network. IPv6 uses a similar method known as Neighbor Discovery.
+				
+			 Address Resolution Protocol(ARP)
+			 
+				Used when we know the ipv4 address of the destination address but we dont know the ethernet MAC address
+				When a pc knows the ip address of the destination ip, it checks the ARP table for the associated MAC address, If it doesnot find te associated MAC address,
+				it sends a ethernet broadcast via switch known as ARP request to know which device has the ip address. The host with the matching ipv4 sends a ARP reply with its MAC.
+				Finally when the sender has the MAC of the receiver it can send the packet in an ethernet frame
+				
+				NOTE: ARP only works within the same local network.
