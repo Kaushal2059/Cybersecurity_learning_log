@@ -1,0 +1,87 @@
+ROUTING BETWEEN NETWORKS
+		THE NEED FOR ROUTING 
+			DIVIDING THE LOCAL NETWORK
+				Reasons for dividing networtk
+					Security reasons
+					maintain smaller broadcast domain
+					Moving to different locations
+					
+				ways to divide network
+					Using routers or switches
+					
+		Now We Need Routing	
+			When a source device sends a packet to a remote destination device, then the help of routers and routing is needed. 
+			Routing is the process of identifying the best path to a destination.
+			Routers, like switches, are able to decode and read the messages that are sent to them. Unlike switches, which make 
+			their forwarding decision based on the Layer 2 MAC address, routers make their forwarding decision based on the Layer 3 IP address.
+			The packet format contains the IP addresses of the destination and source hosts, as well as the message data being sent between them.
+			The router reads the network portion of the destination IP address and uses it to find which one of the attached networks is the best way to forward the message to the destination.
+			
+			Example: if host with ip 1.1.1.1 has to send a packet to 5.5.5.5, it first send the packet to the router. The router then se-encapsulates the ethernet frame, reads the 
+					destination ip and determines where to send the packet and re-encapulates the packet into a new frame and forwards to the destination.
+					
+					
+		The Routing Table
+			Router packet forwarding:
+				Source sends a packet to the default gateway(the router interface). The router receives the packet and looks for its destination ipv4 address in its routing table.
+				the router determines the router interface of the destinatoin host and forwards the packet through the port where the network is connected.
+				However if the message is a broadcast message the router wont forward the network.
+				
+			Routing Table Entries
+				Routers move information between local and remote networks. To do this, routers must use routing tables to store information.
+				Routing tables are not concerned with the addresses of individual hosts. Routing tables contain the addresses of networks,
+				and the best path to reach those networks. Entries can be made to the routing table in two ways: dynamically updated by information 
+				received from other routers in the network, or manually entered by a network administrator. Routers use the routing tables to determine
+				which interface to use to forward a message to its intended destination.
+				
+				If the router cannot determine where to forward a message, it will drop it. Network administrators configure a static default route that 
+				is placed into the routing table so that a packet will not be dropped due to the destination network not being in the routing table.
+				A default route is the interface through which the router forwards a packet containing an unknown destination IP network address. 
+				This default route usually connects to another router that can forward the packet towards its final destination network.
+			
+			The Default Gateway
+				How does the source host determine the MAC address of the router? A host is given the IPv4 address of the router through the default gateway 
+				address configured in its TCP/IP settings. The default gateway address is the address of the router interface connected to the same local network 
+				as the source host. All hosts on the local network use the default gateway address to send messages to the router. When the host knows the default
+				gateway IPv4 address, it can use ARP to determine the MAC address. The MAC address of the router is then placed in the frame, destined for another network.
+				
+				It is important that the correct default gateway be configured on each host on the local network. If no default gateway is configured in the host 
+				TCP/IP settings, or if the wrong default gateway is specified, messages addressed to hosts on remote networks cannot be delivered.
+				
+			Local Area Networks
+				The term local area network (LAN) refers to a local network, or a group of interconnected local networks that are under the same administrative control.
+				In the early days of networking, LANs were defined as small networks that existed in a single physical location. Although LANs can be a single local network 
+				installed in a home or small office, the definition of LAN has evolved to include interconnected local networks consisting of many hundreds of hosts, installed in multiple buildings and locations.
+				The important thing to remember is that all the local networks within a LAN are under one administrative control. 
+				Other common characteristics of LANs are that they typically use Ethernet or wireless protocols, and they support high data rates.
+				The term intranet is often used to refer to a private LAN that belongs to an organization, and is designed to be accessible only by the members of the organization, employees, or others with authorization.
+				
+			Local and Remote Network Segments
+				Devices can be placed on a single network or divide them upp between multiple networks connected by a distribution layer device depending upon the desired outcome.
+					All host in one local segment
+						-> Allows them to be seen by all other hosts because there is only one broadcast domain
+						-> May be beneficial in a single network design
+						Advantages of a single local segment:
+							Appropriate for simpler networks
+							Less complexity and lower network cost
+							Allows devices to be "seen" by other devices
+							Faster data transfer - more direct communication
+							Ease of device access
+						Disadvantages of a single local segment:
+							All hosts are in one broadcast domain which causes more traffic on the segment and may slow network performance
+							Harder to implement QoS
+							Harder to implement security
+							
+					Hosts on Remote Segment
+						Advantages:
+							More appropriate for larger, more complex networks
+							Splits up broadcast domains and decreases traffic
+							Can improve performance on each segment
+							Makes the machines invisible to those on other local network segments
+							Can provide increased security
+							Can improve network organization
+							
+							Disadvantages:
+								Requires the use of routing (distribution layer)
+								Router can slow traffic between segments
+								More complexity and expense (requires a router)
