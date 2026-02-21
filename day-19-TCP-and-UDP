@@ -1,0 +1,17 @@
+TCP and UDP
+		TCP and UDP operations (both operate at the transport layer)
+			UDP (User Datagram Protocol)
+			 -> Used in real time communication and streaming as it doesnot need acknowledgement for receiving messages
+				There will be a large stream of bits while transporting data in the transport layer and it is divided into segments with each segment cotaining a source and destination port.
+				If one packet gets dropped it doesnot create much impact and it would be more efficient to move forward rather than going back and retriving the packet in real time.
+				This protocol is less reliable
+			TCP
+				Considering above case if the scenario is of Bank transfer even a small packet loss can create a significant impact
+				-Eack TCP packet has a sequence number in addition to the destination and the host port numbers so the receiver receives and accounts for each one and once it receives all the packets,
+				it will send an acknowledgement
+				Constant communication is taken place between the end devices(sender and the receiver) as how many packets to be received between acknowledgement
+				It is more reliable
+				
+	
+	
+			
