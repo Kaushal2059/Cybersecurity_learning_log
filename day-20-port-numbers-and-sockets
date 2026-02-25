@@ -7,7 +7,7 @@ dayPort Numbers:
 					FTP - port 21
 					mail - port 25
 					web - port 80
-				the ports below 1024 are considered as well known ports and clients automatically listens to these ports
+				the ports below 1024 are considered as well known ports and clients automatically listens to these ports.
 				
 				Host port are randomly and dynamically assigned above 1024
 				example: when the web browser request the web page the destinatoin will be the port 80 of the web server and the source will be the random port say 5020
